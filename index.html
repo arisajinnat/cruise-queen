@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curise Booking</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body> 
+  <div id="whole">
+      <!--Header and Menu Section-->
+      <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Booking Section-->
+    <main class="main-content container">
+
+        <div class="booking-content">
+            <h1>Cruise Queen</h1>
+            <p>Cruise to unforgettable destinations with Cruise Queen . Save with the best cruise deals and packages to the Caribbean and the Bahamas.
+                
+                </p>
+        </div>
+
+
+        <div class="booking-form">
+            <h3>Book Ocean Time</h3>
+            <div class="input-group">
+                <label for="">Boarding From</label>
+                <input class="inp-style" type="text" name="" placeholder="Chittagong Sea Port, Bangladesh">
+            </div>
+            <div class="input-group">
+                <label for="">Boarding To</label>
+                <input class="inp-style" type="text" name="" placeholder="Port of Savannah, United States">
+            </div>
+            <div class="inputs">
+                <div class="input-group">
+                    <label" for="">Departure</label>
+                    <input class="inp-style" type="date" name="">
+                </div>
+                <div class="input-group">
+                    <label for="">Return</label>
+                    <input class="inp-style" type="date" name="">
+                </div>
+            </div>
+            <div class="input-group f-class">
+                <div>
+                    <label for="">First Class ($150)</label>
+                    <input id="first-input" class="form-control text-center " type="text"  value="0">
+                </div>
+                <div class="plus-minus-btn">
+                    <button id="first-plus" class="btn" >+</button>
+                    <br>
+                    <button id="first-minus" class="btn">-</button>
+                </div>
+            </div>
+            
+            <div class="input-group f-class">
+                <div>
+                    <label for="">Economy ($100)</label>
+                    <input id="eco-input" class="form-control text-center " type="text" value="0">
+                </div>
+                <div class="plus-minus-btn">
+                    <button id="eco-plus" class="btn" >+</button>
+                    <br>
+                    <button id="eco-minus" class="btn">-</button>
+                </div>
+            </div>
+
+
+            <div class="calculations">
+                <div class="amount">
+                    <div class="left">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="subTotal">00</span>
+                            </p>
+                    </div>
+                </div>
+
+                <div class="amount">
+                    <div class="left">
+                        <p>Charge 10% VAT</p>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="tax">00</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="total">00</span></p>
+                    </div>
+                </div>
+            </div>
+            <button id="book-btn" class="btn-style">Book Now</button>
+        </div>
+    </main>
+
+
+    
+  </div>
+
+
+  <div id="thanks-area">
+   
+   <div id="sub-area">
+    <h1 id="thanks" >Thank You</h1>
+    <h3>Your Tickets have been booked succesfully</h3>
+    <p> Your Receipt has been emailed.
+        
+ </p>
+ 
+ <p id="ticket-qty" ></p>
+ <p id="ticket-price"></p>
+   </div>
+ 
+
+
+  </div>
+    
+    <script src="index.js">
+        
+    </script>
+</body>
+  
+
+</html>
